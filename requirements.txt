@@ -1,0 +1,7 @@
+flask
+pyyaml
+flask_cors
+sqlalchemy
+pymysql
+cryptography
+pydantic

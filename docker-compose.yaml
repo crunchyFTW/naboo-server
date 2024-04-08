@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  db:
+    image: mysql
+    restart: always
+    platform: linux/amd64
+    environment:
+      MYSQL_DATABASE: "naboo_v1"
+      MYSQL_USER: "naboo"
+      MYSQL_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "password1234"
+    ports:
+      - '3306:3306'
+    command: --sort_buffer_size=512k
+    container_name: naboo

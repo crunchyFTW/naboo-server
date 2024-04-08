@@ -1,0 +1,7 @@
+db:
+  host: 0.0.0.0
+  port: 3306
+  username: naboo
+  password: password
+  database: naboo_v1
+  type: "mysql+pymysql"
