@@ -16,6 +16,4 @@ def setup_app():
     app.run(port=5555, debug=True)
 
 
-# todo : is the root id 1 always static or do i need to get the new root each time ? maybe using first line of table of nodes to determine root node ?
-
 setup_app()

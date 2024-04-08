@@ -14,10 +14,10 @@ def _create_db():
         result = session.execute(query).first()
 
     if not result:
-        print("Table is empty")
+        print("CREATE DB DATA")
         _insert_db_data()
     else:
-        print("Table is not empty")
+        print("DATA EXIST IN DB")
         result = session.execute(text("SHOW DATABASES;")).all()
         print(result)
         result = session.execute(text("SHOW TABLES;")).all()
